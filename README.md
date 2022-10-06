@@ -83,7 +83,7 @@ for(p in packages) {
 ## Implementation
 
 - The user just needs to download/clone the respective github repository ;
-- For example git clone https://github.com/Jasonmbg/PublicData.CPTAC.BreastCancer.PhosphoP.git
+- For example `git clone https://github.com/Jasonmbg/PublicData.CPTAC.BreastCancer.PhosphoP.git`
 
 ## Kinase activities visualization
 
