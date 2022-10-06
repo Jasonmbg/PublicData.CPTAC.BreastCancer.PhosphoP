@@ -1,6 +1,6 @@
 # Biological knowledge extration from phosphoproteomics data based on public repositories
 
-#### NOTE: *Core* parts of this tutorial are also part of the broader DKFZ-B050 lab project related to *Subclonal drivers of endocrine therapy resistance*
+#### NOTE: *Core* parts of this tutorial are also part of the broader DKFZ-B050 lab project related to "*Subclonal drivers of endocrine therapy resistance*"
 
 #### Efstathios-Iason Vlachavas
 ###### DKFZ-Division of Molecular Genome Analysis (B050)
@@ -26,7 +26,7 @@ In parallel, the relative activities can be utilized as a prioritization tool fo
 
 Moreover, various parts of the workflow can be customized or utilized separately in further steps or broader pipelines;
 
-Ultimately, the activity score for each entity is essentially approximated by weighting the molecular readouts of its targets by their **mode of regulation** (*Activating or Inhibiting*) & **likelihood**
+Ultimately, the activity score for each entity is essentially approximated by weighting the molecular readouts of its targets by their **mode of regulation** (*Activating or Inhibiting*) & **likelihood**.
 
 ![Graphical summary](./Overview.CPTAC.BRCA.Phospho.Tutorial.jpg)
 
@@ -89,13 +89,13 @@ for(p in packages) {
 
 ![Illustrative example of top pertubed kinases](./CPTAC.BRCA.Example.ERPosVSNeg.KinAct.Top10.06102022.png)
 
-##### At a first glance, we can see that amongst the top hits, kinases such as CDK1, CDK2, CDK4 & AURKB are less activated in the ER+ in comparison to ER- tumors; on this premise, we could speculate that ER- are more proliferative than ER+ tumors.
+#### At a first glance, we can see that amongst the top hits, kinases such as CDK1, CDK2, CDK4 & AURKB are less activated in the ER+ in comparison to ER- tumors; on this premise, we could speculate that ER- are more proliferative than ER+ tumors.
 
 ## Pathway/Disease activities visualization
 
 ![Illustrative example of top perturbed pathways](./Custom.Barplot.Example.PTMSigDB.ER_Pos_vs_ER_Neg.06102022.png)
 
-##### Here, PI3K-Akt is present amongst the top-ranked pathways, based on the combined score value (-> based on different metrics different pathways/Diseases could be prioritized, such as the breast cancer & androgen receptor pathway if we use solely the score value).
+#### Here, PI3K-Akt is present amongst the top-ranked pathways, based on the combined score value (-> based on different metrics different pathways/Diseases could be prioritized, such as the breast cancer & androgen receptor pathway if we use solely the score value).
 
 ## Session Info 
 
