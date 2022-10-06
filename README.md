@@ -6,6 +6,8 @@
 ###### DKFZ-Division of Molecular Genome Analysis (B050)
 ###### Efstathios-Iason.Vlachavas@dkfz-heidelberg.de
 
+[![DOI](https://zenodo.org/badge/542631443.svg)](https://zenodo.org/badge/latestdoi/542631443)
+
 Relative public dataset: brca_broad_2020
 
 Publication: Krug et al. 2020 Cell. {https://www.cell.com/cell/fulltext/S0092-8674(20)31400-8}
