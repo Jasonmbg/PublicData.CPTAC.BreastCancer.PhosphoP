@@ -1,0 +1,127 @@
+#Patient Identifier	Age	Sex	Ethnicity	ER Updated Clinical Status	PR Clinical Status	ERBB2 Updated Clinical Status	TNBC Updated Clinical Status	ERBB2 Proteogenomic Status	TOP2A Proteogenomic Status	ERBB2 Gene Amplified	TOP2A Gene Amplified	ESTIMATE TumorPurity	CIBERSORT Absolute Score	ESTIMATE Immune Score	xCell Immune Score	ESTIMATE Stromal Score	xCell Stromal Score	CD3 TILS Status	CD3 TILS Counts	APOBEC Signature	Number of non synonymous Mutations	Chromosome INstability index CIN 	Stemness Score
+#Patient Identifier	Age	Sex	Ethnicity	Updated clinical ER status (central IHC for 68 tumors)	Initial clinical PR status	Updated clinical ERRB2 status (central IHC for 68 tumors)	Triple Negative Breast Cancer (TNBC) status; based on PG ERBB2, updated clinical ER status; initial clinical PR status	Proteogenomic ERBB2 status: gene copy amflification and outlier protein expression	Proteogenomic TOP2A status: gene copy amflification and outlier protein expression	Significant gene copy number amplification; based on GISTIC2 calls: thresholded == 2 & continuous > 1	Significant gene copy number amplification; based on GISTIC2 calls: thresholded == 2 & continuous > 1	Tumor purity inferred from mRNA using the ESTIMATE algorithm	Level of immune cells inferred from mRNA using the CIBERSORT algorithm	Level of immune infiltration inferred from mRNA using the ESTIMATE algorithm	Level of immune cells inferred from mRNA using the xCell algorithm	Level of stromal cells inferred from mRNA using the ESTIMATE algorithm	Level of stromal cells inferred from mRNA using the xCell algorithm	CD3 tumor-infiltrating lymphocytes (TILS) status.	CD3+ cell counts	Enriched APOBEC signature	Total number of somatic mutations (non-synonymous) in the sample	Chromosome instability index as genome wide measure for copy number alterations	Stem cell-like phenotype score
+#STRING	NUMBER	STRING	STRING	STRING	STRING	STRING	STRING	STRING	STRING	NUMBER	NUMBER	NUMBER	NUMBER	NUMBER	NUMBER	NUMBER	NUMBER	STRING	STRING	STRING	NUMBER	NUMBER	NUMBER
+#1	1	1	5	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	5	1
+PATIENT_ID	AGE	SEX	ETHNICITY	ER_UPDATED_CLINICAL_STATUS	PR_CLINICAL_STATUS	ERBB2_UPDATED_CLINICAL_STATUS	TNBC_UPDATED_CLINICAL_STATUS	ERBB2_PROTEOGENOMIC_STATUS	TOP2A_PROTEOGENOMIC_STATUS	ERBB2_GENE_AMPLIFIED	TOP2A_GENE_AMPLIFIED	ESTIMATE_TUMORPURITY	CIBERSORT_ABSOLUTE_SCORE	ESTIMATE_IMMUNE_SCORE	XCELL_IMMUNE_SCORE	ESTIMATE_STROMAL_SCORE	XCELL_STROMAL_SCORE	CD3_TILS_STATUS	CD3_TILS_COUNTS	APOBEC_SIGNATURE	NUMBER_OF_NON_SYNONYMOUS_MUTATIONS	CHROMOSOME_INSTABILITY_INDEX_CIN_	STEMNESS_SCORE
+CPT000814	NA	NA	Black or African American	Negative	negative	NA	Positive	Negative	negative	0	0	0.819666	0.565019	846.350897	0.0414	-812.409581	0	not performed	not performed	N	92	2.2719461	0.798050042
+CPT001846	NA	NA	White	Negative	negative	NA	Positive	Negative	negative	0	0	0.631766	0.785537	1425.391899	0.0766	495.60375	0.0236	not performed	not performed	N	80	0.826617402	0.59210011
+X01BR001	55	Female	Black or African American	Negative	negative	Negative	Positive	Negative	negative	0	0	0.822598	0.45449	475.804314	0.0103	-476.863678	0.0088	not performed	not performed	N	79	1.137608521	0.839482756
+X01BR008	NA	NA	NA	NA	NA	NA	NA	Negative	negative	0	0	0.535194	2.064309	2809.59164	0.484	-77.281727	0.0033	not performed	not performed	N	128	0.466991648	0.599871203
+X01BR009	NA	NA	NA	Negative	negative	NA	Positive	Negative	negative	0	0	0.576875	1.191462	1664.85538	0.0926	725.73435	0.0265	not performed	not performed	N	129	4.30213853	0.437721346
+X01BR010	NA	NA	NA	Negative	negative	NA	Positive	Negative	negative	0	0	0.755079	0.498983	375.355547	0.0155	374.25274	0.0352	T	60	N	88	0.456320974	0.514976271
+X01BR015	35	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.668922	0.720781	1119.306238	0.0638	468.365511	0.043	not performed	not performed	N	55	1.379587319	0.644329816
+X01BR017	45	Female	White	Negative	negative	Positive	Negative	Positive	Negative	1	0	0.564613	1.272618	1883.327193	0.1311	608.997993	0.0202	not performed	not performed	N	134	1.060969462	0.790127929
+X01BR018	66	Female	White	Positive	Negative	negative	Negative	negative	Negative	0	0	0.522033	1.66713	2247.377844	0.2108	590.562586	0.0245	not performed	not performed	N	324	6.068239982	0.763500408
+X01BR020	NA	NA	NA	Negative	negative	NA	Positive	Negative	negative	0	0	0.653076	1.290331	1685.766454	0.146	45.776067	0.0094	not performed	not performed	N	93	4.220512167	0.761221232
+X01BR023	NA	NA	NA	Positive	positive	equivocal	Negative	negative	Negative	0	0	0.957035	0.152146	-676.347021	0.0114	-1440.910847	0.0053	T	5	N	36	3.897837169	0.503055849
+X01BR025	62	Female	Black or African American	Positive	positive	equivocal	Negative	negative	Negative	0	0	0.799688	0.316919	644.717853	0.0789	-378.799768	0	T	45	NA	12	0.477414509	0.618749629
+X01BR026	NA	NA	White	Negative	negative	NA	Positive	Negative	negative	0	0	0.395393	1.574962	2231.321092	0.1655	1579.015155	0.0876	not performed	not performed	N	79	1.758586002	0.3457811
+X01BR027	80	Female	Black or African American	Negative	negative	Negative	Positive	Negative	negative	0	0	0.804447	0.534953	616.765017	0.0603	-405.13497	0	T	55	N	186	1.842240206	0.994348097
+X01BR030	84.16666667	Female	Black or African American	Positive	positive	Negative	negative	Negative	negative	0	0	0.514312	1.607262	2544.70288	0.3263	354.735906	0.0078	T	50	N	71	0.650297221	0.403733619
+X01BR031	61.66666667	Female	Black or African American	Negative	negative	NA	Positive	Negative	negative	0	0	0.686517	0.88796	1061.244615	0.0442	363.401402	0.032	not performed	not performed	N	56	2.547830638	0.901913474
+X01BR032	46.41666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.900993	0.210575	-215.651386	0.0059	-848.767325	0.0008	not performed	not performed	N	30	1.113350459	0.519343598
+X01BR033	40.41666667	Female	Black or African American	Positive	positive	Negative	negative	Negative	negative	0	0	0.563018	0.991935	1559.912463	0.0765	945.572025	0.0631	not performed	not performed	N	96	3.055750677	0.609263714
+X01BR040	NA	NA	Black or African American	Negative	negative	NA	Positive	Negative	negative	0	0	0.553952	1.465522	2369.41481	0.2647	210.526322	0.0039	not performed	not performed	N	45	1.571783285	0.794146359
+X01BR042	NA	NA	Black or African American	Negative	negative	NA	Positive	Negative	negative	0	0	0.72903	0.992146	1712.974756	0.1451	-698.551999	0.001	not performed	not performed	N	101	4.495325229	0.727150988
+X01BR043	NA	NA	White	Negative	negative	NA	Positive	Negative	negative	0	0	0.652287	1.698384	2200.849893	0.1844	-462.212213	0	not performed	not performed	N	8705	2.925318968	0.756322946
+X03BR002	60.58333333	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.743671	0.499958	500.233532	0.0106	366.762223	0.0088	not performed	not performed	N	30	0.263150091	0.431648131
+X03BR004	88.66666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.730184	0.492183	374.456365	0.0346	628.472482	0.1365	not performed	not performed	N	54	0.448071755	0.519619952
+X03BR005	61.5	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.598417	0.809317	1023.633109	0.0194	1185.566943	0.3498	not performed	not performed	NA	14	0.053447784	0.29181424
+X03BR006	NA	NA	White	Negative	negative	NA	Positive	Negative	negative	0	0	0.770509	0.746765	917.34243	0.0525	-330.308601	0.0012	not performed	not performed	N	98	5.661405304	0.597843423
+X03BR010	78.58333333	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.830292	0.292846	289.720214	0.0079	-383.884193	0.0078	not performed	not performed	N	60	1.257480784	0.481619351
+X03BR011	NA	NA	White	Positive	Negative	NA	Negative	negative	Negative	0	0	0.774357	0.451309	473.421364	0.017	72.337367	0.0092	not performed	not performed	N	50	0.390927321	0.53724318
+X03BR013	52.16666667	Female	NA	Positive	positive	Negative	negative	Negative	negative	0	0	0.615701	1.116004	1339.959919	0.0776	721.056076	0.0948	not performed	not performed	N	39	1.43545494	0.57002901
+X05BR001	70	Female	White	Negative	Positive	Negative	negative	Negative	negative	0	0	0.36873	1.690603	2756.194524	0.2853	1250.704619	0.0606	T	70	N	33	0.119783512	0.640608263
+X05BR003	37.58333333	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.608072	0.97308	1118.583239	0.0493	1008.147388	0.2267	T	45	N	72	1.822497393	0.390987945
+X05BR004	NA	NA	White	Positive	positive	NA	Negative	negative	Negative	0	0	0.726689	0.677208	656.337828	0.0163	381.338096	0.0804	not performed	not performed	N	62	0.942026652	0.183419141
+X05BR005	50	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.692142	0.40252	508.65917	0.0264	863.091214	0.055	PT	20	N	74	1.48710105	0.422111675
+X05BR009	64.33333333	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.51536	1.080917	1300.544501	0.0447	1590.568417	0.1984	not performed	not performed	N	102	0.255161644	0.272647335
+X05BR016	78.16666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.808678	0.319954	244.42179	0.0479	-81.547065	0.0026	PT	25	N	80	0.171408231	0.49930901
+X05BR026	71.5	Female	White	Positive	positive	Positive	Negative	Positive	Negative	1	0	0.419537	1.243373	2072.995491	0.0821	1557.223982	0.1918	T	40	N	38	1.224621802	0.486667428
+X05BR029	61.91666667	Female	White	Negative	negative	Negative	Positive	Negative	negative	0	0	0.800564	0.770379	1276.678004	0.0841	-1020.703611	0	T	80	N	393	4.036541722	0.900263956
+X05BR038	52.25	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.689659	0.824787	771.383893	0.0279	623.762794	0.0213	PT	45	Y	408	0.765850842	0.506482396
+X05BR042	40	Female	White	Negative	negative	Negative	Positive	Negative	negative	0	0	0.6892	1.060131	1586.64542	0.0601	-187.183541	0.007	PT	70	N	130	2.467613128	0.831125808
+X05BR043	50	Female	White	Negative	negative	Negative	Positive	Negative	negative	0	0	0.635422	1.241093	1641.832908	0.0957	246.970721	0.0011	T	60	N	156	3.979357879	0.738955715
+X05BR044	62.75	Female	White	Positive	Negative	negative	Negative	negative	Negative	0	0	0.739732	0.688107	958.975	0.0636	-51.971406	0.0102	PT	10	N	56	0.738050003	0.392150606
+X05BR045	60	Female	White	Negative	negative	equivocal	Positive	Negative	negative	0	0	0.775181	0.816303	996.747694	0.0223	-459.868422	0.0107	T	30	N	72	3.525720695	0.615236356
+X06BR003	75	Female	Hispanic or Latino	Positive	Negative	equivocal	Negative	negative	Positive	1	1	0.633125	0.987732	1397.369991	0.1502	511.668718	0.0016	not performed	not performed	N	121	1.130305284	0.653817719
+X06BR005	58	Female	Hispanic or Latino	Positive	positive	equivocal	Negative	negative	Negative	0	0	0.684447	0.861046	1216.147841	0.0647	227.860575	0.013	not performed	not performed	N	64	0.655766629	0.545120343
+X06BR006	51	Female	Hispanic or Latino	Negative	negative	equivocal	Negative	Positive	Negative	1	0	0.50625	0.882338	1442.230636	0.0071	1521.072943	0.3597	not performed	not performed	NA	109	0.158407665	0.45327286
+X06BR014	51	Female	Hispanic or Latino	Positive	positive	Negative	negative	Negative	negative	0	0	0.816296	0.463028	166.427034	0.0216	-92.580645	0.0096	not performed	not performed	N	28	1.117140342	0.479834639
+X09BR001	NA	NA	NA	Positive	positive	NA	Negative	negative	Negative	0	0	0.789744	0.299912	678.901475	0.0303	-301.366779	0.0016	not performed	not performed	N	57	1.506875662	0.163424541
+X09BR004	75.33333333	Female	White	Positive	positive	Positive	Negative	Positive	positive	1	1	0.937017	0.286701	-668.551236	0.0141	-1022.189811	0.0296	not performed	not performed	NA	64	2.4659498	0.75219565
+X09BR005	38.25	Female	White	Positive	positive	Positive	Negative	Positive	positive	1	1	0.7839	0.27765	149.666807	0.013	292.376028	0.0005	not performed	not performed	N	83	1.980462775	0.829954222
+X09BR007	77.5	Female	White	Positive	positive	Positive	Negative	negative	Negative	0	0	0.649722	0.890766	1379.805113	0.0642	381.84552	0.0462	not performed	not performed	N	55	0.954156191	0.552216509
+X11BR003	53.58333333	Female	Asian	Negative	negative	Negative	Positive	Negative	negative	0	0	0.522455	1.820174	2713.222395	0.4051	121.34361	0	not performed	not performed	N	881	0.501259382	0.946462569
+X11BR004	54.5	Female	Asian	Positive	positive	Positive	Negative	Positive	Negative	1	0	0.511529	2.018323	2426.051879	0.2778	495.473287	0.0089	T	75	N	47	0.789010588	0.611965455
+X11BR006	54.5	Female	Asian	Positive	positive	Negative	negative	Negative	negative	0	0	0.65171	0.950416	1324.834522	0.0841	418.982014	0.079	NT	0	N	89	1.602702501	0.658172466
+X11BR009	44.16666667	Female	Asian	Positive	positive	Negative	negative	Negative	negative	0	0	0.781986	0.863016	1029.908175	0.0569	-566.90084	0.0058	T	50	N	139	4.273306928	0.560365573
+X11BR010	35.58333333	Female	Asian	Positive	positive	Positive	Negative	Positive	Negative	1	0	0.60255	0.955077	1353.971531	0.0563	820.015466	0.0171	T	50	N	52	1.415629832	0.522933472
+X11BR011	71.5	Female	Asian	Positive	positive	equivocal	Negative	Positive	Negative	1	1	0.524123	1.408118	2187.725322	0.2124	633.504183	0.0703	T	60	N	45	1.061994048	0.592100237
+X11BR012	77	Female	White	Positive	Negative	negative	Negative	negative	Negative	0	0	0.753768	0.554932	838.54153	0.0475	-75.321046	0.005	PT	5	N	105	2.63410438	0.54414769
+X11BR013	70	Female	White	Positive	Negative	negative	Negative	negative	Negative	0	0	0.802188	0.505907	492.568589	0.015	-255.099747	0.0806	T	15	N	67	0.942759279	0.644401762
+X11BR014	39.66666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.505997	1.000703	1458.02589	0.0313	1507.273907	0.0692	T	10	N	83	0.072014552	0.436756036
+X11BR015	60	Female	White	Positive	Negative	negative	Negative	negative	Negative	0	0	0.876341	0.338225	-22.733317	0.0235	-674.887898	0.0114	PT	10	N	30	1.373961288	0.65731941
+X11BR016	30.91666667	Female	White	Negative	negative	Negative	Positive	Negative	negative	0	0	0.727575	1.369973	1486.399787	0.0694	-457.511032	0	T	70	N	80	1.96930412	1
+X11BR017	74.75	Female	White	Negative	negative	Negative	Positive	Negative	negative	0	0	0.651856	1.090942	1639.612214	0.1133	102.893143	0.0112	T	60	N	56	1.084218653	0.558870506
+X11BR018	54.41666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.452693	1.547491	2091.740653	0.1287	1287.446874	0.1968	T	45	N	73	0.167410177	0.337389506
+X11BR019	61.25	Female	White	Positive	positive	Negative	negative	Negative	negative	1	0	0.69222	1.04273	1719.617176	0.309	-348.606579	0.0088	T	70	N	98	1.485021635	0.576993504
+X11BR020	37.5	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.599275	1.319588	1725.041825	0.0804	476.866338	0.0686	T	40	N	129	1.349644706	0.627061119
+X11BR022	48.66666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.701999	0.796172	893.021712	0.0419	385.068534	0.0094	T	25	N	54	0.041769587	0.68522813
+X11BR023	58.5	Female	White	Negative	negative	Negative	Positive	Negative	negative	0	0	0.58525	1.416804	2056.103037	0.1475	264.384302	0	T	30	N	110	1.015638905	0.835644026
+X11BR024	80.75	Female	White	Negative	negative	Negative	Positive	Negative	negative	0	0	0.621099	1.488928	2238.743018	0.1537	-224.520717	0	T	65	N	88	1.371127518	0.780612324
+X11BR025	77.41666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.896845	0.233066	-289.516909	0.0079	-710.395533	0.002	PT	5	N	53	0.099965473	0.55287122
+X11BR027	76.16666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.713649	0.822915	1279.40903	0.0596	-113.677851	0.0014	PT	25	N	125	0.882946157	0.363530924
+X11BR028	55.33333333	Female	White	Negative	negative	Positive	Negative	Positive	Negative	1	0	0.735588	0.463925	791.509885	0.0479	157.302638	0.0079	T	40	N	104	3.160146832	0.775925119
+X11BR030	50.75	Female	Asian	Negative	negative	Positive	Negative	Positive	Negative	1	0	0.471635	1.617953	2765.526834	0.3322	468.139173	0.031	PT	15	Y	95	0.394085544	0.647774985
+X11BR031	50	Female	Asian	Positive	positive	Negative	negative	Negative	negative	0	0	0.582517	1.008895	1519.115732	0.0783	824.303566	0.0836	T	35	Y	377	1.76392698	0.472024607
+X11BR032	49.75	Female	Asian	Positive	positive	Negative	negative	Negative	negative	0	0	0.565583	1.079728	1337.777641	0.0367	1146.538057	0.1185	T	5	N	19	0.307859209	0.45262614
+X11BR036	51.58333333	Female	Asian	Negative	negative	Negative	Positive	Negative	negative	0	0	0.897906	0.234612	-73.398721	0.0051	-942.899492	0.0064	PT	5	N	67	2.126255904	0.832424603
+X11BR038	47.41666667	Female	Asian	Negative	NA	Positive	Negative	Positive	Negative	1	0	0.54121	2.000247	2208.369097	0.369	475.316791	0.0363	PT	30	N	44	0.606024653	0.651021466
+X11BR040	67.83333333	Female	Asian	Positive	positive	Negative	negative	Negative	negative	0	0	0.742148	0.67328	716.550157	0.0229	165.941259	0.0666	T	20	N	32	0.265259668	0.427947648
+X11BR042	71.41666667	Female	White	Negative	negative	Negative	Positive	Negative	negative	0	0	0.701389	0.702472	934.889391	0.0527	349.034868	0.0158	T	30	N	31	0.73203768	0.640158289
+X11BR043	36.66666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.53396	1.434464	2288.081121	0.2159	454.178235	0.001	T	70	N	83	2.715802638	0.722097264
+X11BR044	48	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.711318	1.058189	1127.109032	0.1125	61.254668	0.0056	T	60	N	54	1.91595668	0.830750536
+X11BR047	59.16666667	Female	Asian	Positive	positive	Negative	negative	Negative	negative	0	0	0.71902	0.636493	635.421797	0.0555	477.871345	0.0248	T	50	N	29	0.630788376	0.527025208
+X11BR049	45.83333333	Female	Asian	Positive	positive	Negative	negative	Negative	negative	0	0	0.674546	1.139219	1242.772843	0.0585	293.173402	0.0089	T	65	N	79	1.388772689	0.622909634
+X11BR050	54	Female	Asian	Positive	positive	Negative	negative	Negative	negative	0	0	0.493014	1.18295	1590.251314	0.0525	1477.145666	0.2123	PT	10	N	28	0.121141789	0.453744928
+X11BR051	65.41666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.652469	0.815085	1211.405372	0.0605	525.588902	0.0462	T	15	N	45	1.361058459	0.487273371
+X11BR053	61.91666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.829248	0.40404	201.171392	0.0251	-282.591904	0.0043	PT	10	N	82	3.656801476	0.573902251
+X11BR054	84.41666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.869544	0.329558	101.496162	0.037	-704.19923	0	T	35	N	26	0.026149142	0.441018246
+X11BR055	56.25	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.599412	0.818386	1107.703403	0.0361	1093.033872	0.0626	T	5	N	85	1.555005308	0.61919958
+X11BR056	52.83333333	Female	Asian	Positive	Negative	negative	Negative	negative	Negative	0	0	0.557649	1.21051	1629.27314	0.1494	920.369961	0.0644	T	70	N	39	1.800882719	0.581368778
+X11BR058	65.58333333	Female	Asian	Negative	NA	Negative	NA	Negative	negative	0	0	0.554292	0.873502	1372.43086	0.1061	1204.728316	0.0498	T	10	NA	63	1.010827695	0.585720082
+X11BR059	45.91666667	Female	Asian	Positive	NA	Negative	negative	Negative	negative	0	0	0.711566	1.001855	1052.949848	0.0141	133.006864	0.0093	T	60	NA	70	0.812461627	0.743880292
+X11BR060	52.83333333	Female	Asian	Negative	negative	Positive	Negative	Positive	positive	1	1	0.595905	0.903779	1265.591305	0.0727	964.948681	0.0298	T	55	N	117	4.033835805	0.602351578
+X11BR072	70.66666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.658547	0.79744	1076.824162	0.0308	605.341579	0.145	T	50	N	46	0.133328699	0.395994083
+X11BR073	64.58333333	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.526436	1.568457	2565.542979	0.3263	237.171381	0.0026	T	75	N	82	1.468737918	0.64934993
+X11BR074	66.16666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.614957	0.860188	991.831168	0.0252	1075.616092	0.0394	T	10	N	20	0.310636112	0.50579834
+X11BR075	79.41666667	Female	White	Positive	NA	Negative	negative	Negative	negative	0	0	0.687257	0.770334	954.540245	0.0515	463.164821	0.0274	T	30	N	166	3.39840801	0.624065815
+X11BR080	68.33333333	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.552769	1.593937	2255.776041	0.2532	333.844739	0.0125	T	55	N	71	1.451119883	0.826384301
+X13BR009	75	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.800117	0.49338	503.860612	0.0283	-242.807701	0.0286	not performed	not performed	N	70	2.826122978	0.660835387
+X14BR005	78.33333333	Female	White	Positive	positive	NA	Negative	negative	Negative	0	0	0.802282	0.535901	634.281663	0.0449	-397.879373	0.0149	not performed	not performed	N	39	1.677906218	0.526800316
+X14BR008	66.33333333	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.571791	0.984642	1243.442351	0.0216	1189.459127	0.2005	not performed	not performed	N	25	0.29960095	0.313464221
+X14BR014	59.16666667	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.707649	0.87434	700.860825	0.0451	522.965467	0.1019	not performed	not performed	N	23	0.202887753	0.458240632
+X15BR003	74.58333333	Female	White	Positive	Negative	negative	Negative	negative	Negative	0	0	0.583488	1.238836	1556.414992	0.1377	778.866509	0.1262	not performed	not performed	Y	711	0.139798332	0.297940894
+X16BR012	47.5	Female	White	NA	NA	NA	NA	Negative	negative	0	0	0.727713	0.578108	590.628133	0.0393	436.886485	0.0438	not performed	not performed	Y	170	0.793115717	0.667343261
+X18BR002	64.08333333	Female	White	Negative	negative	Negative	Positive	Negative	negative	0	0	0.4172	1.383812	2206.669318	0.1023	1441.074516	0.0326	T	5	N	158	1.164432244	0.501459032
+X18BR003	65.83333333	Female	White	Positive	Negative	negative	Negative	negative	Negative	0	0	0.647554	1.35861	1853.547775	0.1408	-72.486852	0.0032	T	60	Y	1066	0.572258451	0.568389356
+X18BR004	76.75	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.85359	0.404123	57.675786	0.0313	-446.188976	0.0089	NT	1	N	28	0.374702641	0.508861174
+X18BR006	62.33333333	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.574355	0.919271	1428.845476	0.0655	982.740632	0.0777	PT	5	N	131	3.248566526	0.606374976
+X18BR007	64	Female	White	Positive	positive	equivocal	Negative	negative	Negative	0	0	0.616992	0.95944	1445.219269	0.0672	604.632201	0.005	not performed	not performed	N	102	1.238151274	0.628674444
+X18BR009	63.5	Female	White	Negative	negative	Positive	Negative	Positive	Negative	1	0	0.472941	1.918183	2385.70268	0.3099	837.874347	0.0992	PT	70	NA	64	0.459675173	0.496640158
+X18BR010	41	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.634357	0.784446	966.576375	0.0462	931.613195	0.0266	PT	10	N	28	0.519579637	0.671878422
+X18BR016	73.75	Female	White	Positive	NA	Negative	negative	Negative	negative	0	0	0.698784	0.510331	537.772533	0.0173	771.005706	0.0438	PT	1	N	36	0.739682923	0.438941735
+X18BR017	72.66666667	Female	White	Positive	Negative	negative	Negative	negative	Negative	0	0	0.602272	1.082374	1304.195032	0.0873	872.169912	0.0206	not performed	not performed	N	82	1.802915153	0.56306069
+X18BR019	68.08333333	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.727492	0.683072	838.600703	0.0137	191.107936	0.0523	not performed	not performed	N	31	0.323082858	0.431888007
+X20BR001	82.16666667	Female	Black or African American	Positive	positive	Negative	negative	Negative	negative	0	0	0.699324	0.63872	1240.694726	0.1175	62.931282	0	not performed	not performed	N	36	0.758862705	0.318753217
+X20BR002	95.33333333	Female	White	Negative	Positive	Negative	negative	Negative	negative	0	0	0.707173	0.643153	680.311661	0.0289	548.100456	0.0389	not performed	not performed	N	115	2.420805736	0.779723581
+X20BR005	47.33333333	Female	Black or African American	Negative	negative	Negative	Positive	Negative	negative	0	0	0.654655	0.526494	932.987215	0.0393	784.333896	0.001	not performed	not performed	N	139	3.97560851	0.553935398
+X20BR006	65.5	Female	White	Positive	Negative	negative	Negative	negative	Negative	0	0	0.775527	0.339632	535.17001	0.0059	-2.021472	0.0059	not performed	not performed	N	96	2.879015576	0.451417647
+X20BR007	55	Female	Black or African American	Negative	negative	Negative	Positive	Negative	negative	0	0	0.588594	0.731444	1507.621871	0.1303	784.728836	0	not performed	not performed	N	129	2.437907928	0.526077873
+X20BR008	71.91666667	Female	Black or African American	Negative	negative	Negative	Positive	Negative	negative	0	0	0.610224	0.385938	954.860667	0.0747	1153.385721	0.0095	not performed	not performed	N	94	0.26096968	0.183250787
+X21BR001	NA	NA	White	Negative	negative	NA	Negative	Positive	Negative	1	0	0.625141	1.085131	2014.358538	0.1573	-35.342048	0.004	not performed	not performed	N	287	1.925994132	0.356451504
+X21BR002	NA	NA	White	Positive	positive	NA	Negative	negative	Negative	0	0	0.543167	0.959089	1956.58573	0.1577	711.234125	0.0136	not performed	not performed	N	50	0.751422632	0.263091541
+X21BR010	71	Female	White	Positive	positive	Negative	negative	Negative	negative	0	0	0.682815	0.267234	628.877273	0.0293	830.372368	0.0195	not performed	not performed	N	26	0.345134879	0
+X22BR005	46	Female	White	Positive	positive	Positive	Negative	Positive	Negative	1	0	0.674586	1.010303	1346.716615	0.0647	188.859577	0.004	not performed	not performed	N	98	1.722306367	0.605869428
+X22BR006	55	Female	Black or African American	Positive	positive	Negative	negative	Negative	negative	0	0	0.67507	0.890611	1012.34597	0.0553	518.765898	0.0768	not performed	not performed	N	21	0.381897508	0.411004451
