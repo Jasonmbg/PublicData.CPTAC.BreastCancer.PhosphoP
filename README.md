@@ -66,7 +66,9 @@ packages = c(
     "limma",
     "org.Hs.eg.db",
     "ggplot2",
-    "forcats"
+    "forcats",
+    "DOSE",
+    "clusterProfiler"
 )
 
 if(!requireNamespace("BiocManager")) {

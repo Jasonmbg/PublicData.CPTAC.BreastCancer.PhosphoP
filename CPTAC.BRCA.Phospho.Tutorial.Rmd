@@ -17,6 +17,8 @@ library(OmnipathR)
 library(org.Hs.eg.db)
 library(ggplot2)
 library(forcats)
+library(clusterProfiler)
+library(DOSE)
 
 ```
 
@@ -35,10 +37,14 @@ load("data_phosphoprotein_quantification.CPTAC.BRCA.RData")
 
 # formatting of the initial data frame to exclude ambiguous entities such as ACACB_S192s_S195s, ADAMt_S12_S1559s, etc. using regular expressions based on the stringr R package
 
-dat.phospho.mod <- dat.phospho %>% dplyr::select(-c(NAME, DESCRIPTION, GENE_SYMBOL, PHOSPHOSITES)) %>% mutate(Feature_mod = str_extract(ENTITY_STABLE_ID, "[^_]*_[^_]*")) %>% mutate(Feature_final=str_sub(Feature_mod,1,nchar(Feature_mod)-1)) %>%
-dplyr::distinct(Feature_final,.keep_all=TRUE) %>%
-column_to_rownames("Feature_final") %>% select(-c(Feature_mod,ENTITY_STABLE_ID)) %>% 
-dplyr::select(all_of(tot.samples)) 
+dat.phospho.mod <- dat.phospho %>% 
+  dplyr::select(-c(NAME, DESCRIPTION, GENE_SYMBOL, PHOSPHOSITES)) %>%
+  mutate(Feature_mod = str_extract(ENTITY_STABLE_ID, "[^_]*_[^_]*")) %>%
+  mutate(Feature_final=str_sub(Feature_mod,1,nchar(Feature_mod)-1)) %>%
+  dplyr::distinct(Feature_final,.keep_all=TRUE) %>%
+  column_to_rownames("Feature_final") %>%
+  dplyr::select(-c(Feature_mod,ENTITY_STABLE_ID)) %>% 
+  dplyr::select(all_of(tot.samples)) 
 
 dat.phospho.clean <- dat.phospho.mod[!rowSums(is.na(dat.phospho.mod)) > 96, ] #  ~80% of total 120 samples; after filtering, 34064 features remained from 34122
 
@@ -66,8 +72,12 @@ fit3 <- eBayes(fit2, trend=TRUE,robust = TRUE)
 comp1_stat <- limma::topTable(fit3, coef=1, number=nrow(fit3), adjust.method="fdr", sort.by="none") %>% dplyr::select(t) %>% dplyr::rename(ER_Pos_vs_ER_Neg_t_stat=t) %>% drop_na()
 
 # this we will use downstream for pathway activity
-comp1_stat_cptac_ptm <- limma::topTable(fit3, coef=1, number=nrow(fit3), adjust.method="fdr", sort.by="none") %>% dplyr::select(t) %>% rename(ER_Pos_vs_ER_Neg_t_stat=t) %>% drop_na() %>% 
-rownames_to_column() %>% separate("rowname", sep="_", into=c("GeneSymbol","PhosID"))
+comp1_stat_cptac_ptm <- limma::topTable(fit3, coef=1, number=nrow(fit3), adjust.method="fdr", sort.by="none") %>% 
+  dplyr::select(t) %>% 
+  dplyr::rename(ER_Pos_vs_ER_Neg_t_stat=t) %>% 
+  drop_na() %>%
+  rownames_to_column() %>% 
+  separate("rowname", sep="_", into=c("GeneSymbol","PhosID"))
 
 # optional saving of the additional res file
 write_tsv(comp1_stat_cptac_ptm, file="Initial.Input.CPTAC.DE.RES.PhosphoP.06102022.tsv")
